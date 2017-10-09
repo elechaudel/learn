@@ -1,0 +1,58 @@
+out:  ./main.css, sourcemap: false, compress: false
+
+@import url('https://rsms.me/inter/inter-ui.css');
+
+@title-font: 'Spectral', serif;
+@text-font: 'Inter UI', sans-serif;
+
+@anthracite: #131313;
+@white: #ffffff;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: @white;
+}
+
+body {
+  background-color: @anthracite;
+}
+
+
+
+// font styles
+
+h1 {
+  font-family: @title-font;
+  font-size: 52px;
+  color: @white;
+
+  @media (max-width: 970px) {
+    font-size: 38px;
+  }
+}
+
+h2.subheadline {
+  font-family: @text-font;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  color: @white;
+
+  @media (max-width: 970px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+// page layout
+
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border: 12px solid black;
+}
