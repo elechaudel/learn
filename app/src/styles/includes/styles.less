@@ -1,11 +1,12 @@
-// Styles requirements
-@import "media-queries.less";
-@import "colors.less";
-
 .page-layout {
 	max-width: 1200px;
 	margin: auto;
 	padding: 0px 15px;
+}
+
+.page-background {
+	position: relative;
+	z-index: 99;
 }
 
 .flex-container {
@@ -75,19 +76,47 @@ nav {
 	}
 }
 
-footer {
-	&.basic-footer {
-		padding: 0px 15px;
-	}
+footer.basic-footer {
+	padding: 0px 15px;
+}
 
-	&.chapter-footer {
-		position: sticky;
-		left: 0px;
-		bottom: 0px;
-		z-index: -999;
-		width: 100%;
+footer.chapter-footer {
+	position: sticky;
+	left: 0px;
+	bottom: 0px;
+	z-index: 1;
+	width: 100%;
+	
+	a {	
 		.chapter-footer__content {
 			padding: 80px 0px;
+			width: 100%;
+		}
+
+		.chapter-footer__title {
+			position: relative;
+			&::after {
+				visibility: hidden;
+				content: url("../media/icons/arrow-white.svg");
+				display: block;
+		   		position: absolute;
+		   		top: -8px;
+		   		right: 16px;
+		   		transition: all .3s ease;
+	    		transform: scale(2);
+		    	
+		    	@media @md {
+		    		visibility: visible;
+		    	}
+			}
+		}
+	}
+
+	&:hover {
+		.chapter-footer__title {
+			&::after {
+				right: 0px;
+			}
 		}
 	}
 }
@@ -112,7 +141,6 @@ footer {
 		}
 	}
 	&:hover {
-		cursor: pointer;
 		hr {
 			opacity: 1;
 		}

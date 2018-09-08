@@ -309,6 +309,10 @@ p.meta {
   margin: auto;
   padding: 0px 15px;
 }
+.page-background {
+  position: relative;
+  z-index: 99;
+}
 .flex-container {
   display: flex;
 }
@@ -371,11 +375,33 @@ footer.chapter-footer {
   position: sticky;
   left: 0px;
   bottom: 0px;
-  z-index: -999;
+  z-index: 1;
   width: 100%;
 }
-footer.chapter-footer .chapter-footer__content {
+footer.chapter-footer a .chapter-footer__content {
   padding: 80px 0px;
+  width: 100%;
+}
+footer.chapter-footer a .chapter-footer__title {
+  position: relative;
+}
+footer.chapter-footer a .chapter-footer__title::after {
+  visibility: hidden;
+  content: url("../media/icons/arrow-white.svg");
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  transition: all 0.3s ease;
+  transform: scale(2);
+}
+@media only screen and (min-width: 750px) {
+  footer.chapter-footer a .chapter-footer__title::after {
+    visibility: visible;
+  }
+}
+footer.chapter-footer:hover .chapter-footer__title::after {
+  right: 0px;
 }
 .chapter-link hr {
   width: 100%;
@@ -394,9 +420,6 @@ footer.chapter-footer .chapter-footer__content {
   top: 0px;
   right: 16px;
   transition: all 0.3s ease;
-}
-.chapter-link:hover {
-  cursor: pointer;
 }
 .chapter-link:hover hr {
   opacity: 1;

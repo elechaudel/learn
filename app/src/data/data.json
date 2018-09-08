@@ -3,26 +3,30 @@
     {
       "id": "Chapter 01",
       "name": "What are you willing to work on?",
-      "url": "",
-      "moduleRef": "Module 01"
+      "url": "/chapter-1",
+      "moduleRef": "Module 01",
+      "bgColor": "red"
     },
     {
       "id": "Chapter 02",
       "name": "Lorem ipsum dolor set amet?",
       "url": "",
-      "moduleRef": "Module 01"
+      "moduleRef": "Module 01",
+      "bgColor": "red"
     },
     {
       "id": "Chapter 03",
       "name": "Lorem ipsum dolor set amet?",
       "url": "",
-      "moduleRef": "Module 02"
+      "moduleRef": "Module 02",
+      "bgColor": "purple"
     },
     {
       "id": "Chapter 04",
       "name": "Lorem ipsum dolor set amet?",
       "url": "",
-      "moduleRef": "Module 02"
+      "moduleRef": "Module 02",
+      "bgColor": "purple"
     }
   ],
 

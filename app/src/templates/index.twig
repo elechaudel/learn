@@ -84,7 +84,11 @@
 	</div>
 
 	<!-- Begin chapter-footer -->
-	{% include "partials/chapter-footer.twig" %}
+	{% for chapter in chapters %}
+		{% if loop.first %}
+			{% include "partials/chapter-footer.twig" %}
+		{% endif %}
+	{% endfor %}
 	<!-- End chapter-footer -->
 	
 {% endblock %}
