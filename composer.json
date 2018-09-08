@@ -1,0 +1,13 @@
+{
+    "name": "edgarlechaudel/learn",
+    "authors": [
+        {
+            "name": "Edgar Lechaudel",
+            "email": "elechaudel@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0",
+        "symfony/finder": "^4.1"
+    }
+}
