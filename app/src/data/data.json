@@ -1,0 +1,73 @@
+ { 
+  "chapters": [
+    {
+      "id": "Chapter 01",
+      "name": "What are you willing to work on?",
+      "url": "",
+      "moduleRef": "Module 01"
+    },
+    {
+      "id": "Chapter 02",
+      "name": "Lorem ipsum dolor set amet?",
+      "url": "",
+      "moduleRef": "Module 01"
+    },
+    {
+      "id": "Chapter 03",
+      "name": "Lorem ipsum dolor set amet?",
+      "url": "",
+      "moduleRef": "Module 02"
+    },
+    {
+      "id": "Chapter 04",
+      "name": "Lorem ipsum dolor set amet?",
+      "url": "",
+      "moduleRef": "Module 02"
+    }
+  ],
+
+  "modules": [
+    {
+      "id": "Module 01",
+      "name": "Your project",
+      "description": "The objective of this module is to choose and develop a transversal project. A project on which you’re going to experiment the stuff you’ll learn throughout this course. A transversal project is a project that you like, a project that inspires you. Choosing a project is critical to the success of this course.",
+      "url": "",
+      "bgColor": "red"
+    },
+    {
+      "id": "Module 02",
+      "name": "Your project on Search Engines",
+      "description": "The objective of this module is to choose and develop a transversal project. A project on which you’re going to experiment the stuff you’ll learn throughout this course. A transversal project is a project that you like, a project that inspires you. Choosing a project is critical to the success of this course.",
+      "url": "",
+      "bgColor": "purple"
+    },
+    {
+      "id": "Module 03",
+      "name": "Your project on Social Networks",
+      "description": "The objective of this module is to choose and develop a transversal project. A project on which you’re going to experiment the stuff you’ll learn throughout this course. A transversal project is a project that you like, a project that inspires you. Choosing a project is critical to the success of this course.",
+      "url": "",
+      "bgColor": "green"
+    }
+  ],
+
+  "socials": [
+    {
+      "logo": "media/logos/social/github-logo.svg",
+      "imgAlt": "Github brand logo",
+      "description": "I publish my digital experiments on Github.",
+      "url": "https://github.com/elechaudel/"
+    },
+    {
+      "logo": "media/logos/social/twitter-logo.svg",
+      "imgAlt": "Twitter brand logo",
+      "description": "I retweet nice articles and inspiring quotes on Twitter.",
+      "url": "https://twitter.com/elechaudel"
+    },
+    {
+      "logo": "media/logos/social/linkedin-logo.svg",
+      "imgAlt": "Linkedin brand logo",
+      "description": "I’m happy to connect with you on Linkedin for any requests.",
+      "url": "https://lu.linkedin.com/in/edgarlechaudel"
+    }
+  ]
+ } 

@@ -1,0 +1,27 @@
+<div class="block-module bg-color--{{ module.bgColor }}">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 vertical-spacing--40--bottom">
+				<p class="meta text-color--white70 vertical-spacing--8--bottom">{{ module.id }}</p>
+				<h3>{{ module.name }}</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="flex-container">
+				<div class="col-xs-12 col-xl-6 vertical-spacing--40--bottom">
+					<p>{{ module.description }}</p>
+				</div>
+				<div class="wrapper">
+					{% set moduleChecker = module.id %}
+					{% for chapter in chapters %}
+						{% if moduleChecker == chapter.moduleRef %}
+						<div class="col-12">
+							{% include 'chapter-link.twig' %}
+						</div>	
+						{% endif %}					
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

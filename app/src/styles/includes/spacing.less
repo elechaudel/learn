@@ -1,0 +1,47 @@
+/* Defining the default space value of the 8px grid */
+@px-value: 8px;
+
+/* Mixin that defines the different variations of the vertical spacing */
+.spacing(@px-value) {
+	margin: @px-value 0px;
+		&--top {
+			margin-top: @px-value;
+		}
+		&--bottom {
+			margin-bottom: @px-value;
+		}
+}
+
+/* Defining vertical space styles */
+.vertical-spacing {
+	&--8 {
+		.spacing(8px);
+	}
+	&--16 {
+		.spacing(16px);
+	}
+	&--24 {
+		.spacing(24px);
+	}
+	&--32 {
+		.spacing(32px);
+	}
+	&--40 {
+		.spacing(40px);
+	}
+	&--48 {
+		.spacing(48px);
+	}
+	&--56 {
+		.spacing(56px);
+	}
+	&--64 {
+		.spacing(64px);
+	}
+	&--80 {
+		.spacing(80px);
+	}
+	&--160 {
+		.spacing(160px);
+	}
+}

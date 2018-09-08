@@ -1,0 +1,93 @@
+/* Defining the default space value of the 8px grid */
+/* Mixin that defines the different variations of the vertical spacing */
+/* Defining vertical space styles */
+.vertical-spacing--8 {
+  margin: 8px 0px;
+}
+.vertical-spacing--8--top {
+  margin-top: 8px;
+}
+.vertical-spacing--8--bottom {
+  margin-bottom: 8px;
+}
+.vertical-spacing--16 {
+  margin: 16px 0px;
+}
+.vertical-spacing--16--top {
+  margin-top: 16px;
+}
+.vertical-spacing--16--bottom {
+  margin-bottom: 16px;
+}
+.vertical-spacing--24 {
+  margin: 24px 0px;
+}
+.vertical-spacing--24--top {
+  margin-top: 24px;
+}
+.vertical-spacing--24--bottom {
+  margin-bottom: 24px;
+}
+.vertical-spacing--32 {
+  margin: 32px 0px;
+}
+.vertical-spacing--32--top {
+  margin-top: 32px;
+}
+.vertical-spacing--32--bottom {
+  margin-bottom: 32px;
+}
+.vertical-spacing--40 {
+  margin: 40px 0px;
+}
+.vertical-spacing--40--top {
+  margin-top: 40px;
+}
+.vertical-spacing--40--bottom {
+  margin-bottom: 40px;
+}
+.vertical-spacing--48 {
+  margin: 48px 0px;
+}
+.vertical-spacing--48--top {
+  margin-top: 48px;
+}
+.vertical-spacing--48--bottom {
+  margin-bottom: 48px;
+}
+.vertical-spacing--56 {
+  margin: 56px 0px;
+}
+.vertical-spacing--56--top {
+  margin-top: 56px;
+}
+.vertical-spacing--56--bottom {
+  margin-bottom: 56px;
+}
+.vertical-spacing--64 {
+  margin: 64px 0px;
+}
+.vertical-spacing--64--top {
+  margin-top: 64px;
+}
+.vertical-spacing--64--bottom {
+  margin-bottom: 64px;
+}
+.vertical-spacing--80 {
+  margin: 80px 0px;
+}
+.vertical-spacing--80--top {
+  margin-top: 80px;
+}
+.vertical-spacing--80--bottom {
+  margin-bottom: 80px;
+}
+.vertical-spacing--160 {
+  margin: 160px 0px;
+}
+.vertical-spacing--160--top {
+  margin-top: 160px;
+}
+.vertical-spacing--160--bottom {
+  margin-bottom: 160px;
+}

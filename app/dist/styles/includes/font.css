@@ -1,0 +1,74 @@
+.text-color--black {
+  color: #000000;
+}
+.text-color--white {
+  color: #ffffff;
+}
+.text-color--white70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.text-color--red {
+  color: #E9110B;
+}
+.text-color--purple {
+  color: #6F0BE9;
+}
+.text-color--green {
+  color: #0BE9BB;
+}
+.bg-color--black {
+  background-color: #000000;
+}
+.bg-color--white {
+  background-color: #ffffff;
+}
+.bg-color--red {
+  background-color: #E9110B;
+}
+.bg-color--purple {
+  background-color: #6F0BE9;
+}
+.bg-color--green {
+  background-color: #0BE9BB;
+}
+/* Declaring fluid font variables */
+/* The unit function is a LESS function that is used to remove the unit from a value */
+/* Mixin that calculates the fluid typography using a linear interpolation formula */
+/* Utility classes */
+.bold {
+  font-weight: 700;
+}
+/* Defining font styles */
+html {
+  font-family: 'Overpass', sans-serif;
+}
+h1,
+h2,
+h3,
+p {
+  color: #ffffff;
+}
+h1 {
+  font-size: calc(42px + (56 - 42) * (100vw - 320px) / (1200 - 320));
+  line-height: 1.3;
+}
+h2 {
+  font-size: calc(36px + (44 - 36) * (100vw - 320px) / (1200 - 320));
+  line-height: 1.3;
+}
+h3 {
+  font-size: calc(28px + (36 - 28) * (100vw - 320px) / (1200 - 320));
+  line-height: 1.3;
+}
+p {
+  font-size: calc(20px + (20 - 20) * (100vw - 320px) / (1200 - 320));
+  line-height: 1.5;
+}
+p.paragraph__big {
+  font-size: calc(28px + (28 - 28) * (100vw - 320px) / (1200 - 320));
+  line-height: 1.5;
+}
+p.meta {
+  font-size: calc(16px + (16 - 16) * (100vw - 320px) / (1200 - 320));
+  line-height: 1;
+}

@@ -1,0 +1,66 @@
+// Styles requirements
+@import "colors.less";
+
+/* Declaring fluid font variables */
+/* The unit function is a LESS function that is used to remove the unit from a value */
+@min-font: 16px;
+@min-font-unitless: unit(@min-font);
+@max-font: 16px;
+@max-font-unitless: unit(@max-font);
+@min-screen: 320px;
+@min-screen-unitless: unit(@min-screen);
+@max-screen: 1200px;
+@max-screen-unitless: unit(@max-screen);
+
+/* Mixin that calculates the fluid typography using a linear interpolation formula */
+.fluid-type(@min-font, @max-font, @min-screen, @max-screen) {
+font-size: calc(@min-font + (@max-font-unitless - @min-font-unitless) * (100vw - @min-screen) / (@max-screen-unitless - @min-screen-unitless));
+}
+
+/* Utility classes */
+
+.bold {
+	font-weight: 700;
+}
+
+/* Defining font styles */
+
+html {
+	font-family: 'Overpass', sans-serif;
+}
+
+h1, h2, h3, p {
+	color: @white;
+}
+
+h1 {
+  .fluid-type(42px, 56px, 320px, 1200px);
+  line-height: 1.3;
+}
+
+h2 {
+	.fluid-type(36px, 44px, 320px, 1200px);
+	line-height: 1.3;
+}
+
+h3 {
+	.fluid-type(28px, 36px, 320px, 1200px);
+	line-height: 1.3;
+}
+
+p {
+	.fluid-type(20px, 20px, 320px, 1200px);
+	line-height: 1.5;
+
+	&.paragraph {
+		&__big {
+			.fluid-type(28px, 28px, 320px, 1200px);
+			line-height: 1.5;
+		}
+	}
+
+	&.meta {
+		.fluid-type(16px, 16px, 320px, 1200px);
+		line-height: 1;
+	}
+}

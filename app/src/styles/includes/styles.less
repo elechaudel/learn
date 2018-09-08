@@ -1,0 +1,160 @@
+// Styles requirements
+@import "media-queries.less";
+@import "colors.less";
+
+.page-layout {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0px 15px;
+}
+
+.flex-container {
+	display: flex;
+
+	&.space-between {
+		justify-content: space-between;
+	}
+
+	&.align-center {
+		align-items: center;
+	}
+}
+
+hr {
+	margin: 0;
+}
+
+nav {
+	position: sticky;
+	top: 0px;
+	z-index: 999;
+	a {
+		text-decoration: none;
+		color: @white;
+	}
+
+	&.menu {
+		padding: 40px 15px;
+
+		.hamburger-icon {
+			position: relative;
+			height: 20px;
+			width: 24px;
+			cursor: pointer;
+			span {
+				display: inline-block;
+				&.hamburger-bar {
+					&--first {
+						position: absolute;
+						top: 5px;
+						left: 0px;
+						width: 24px;
+						height: 1px;
+						transform: translate(-4px, 0);
+						transition: all .3s ease;
+					}
+					&--second {
+						position: absolute;
+						bottom: 5px;
+						right: 0px;
+						width: 24px;
+						height: 1px;
+						transform: translate(4px, 0);
+						transition: all .3s ease;
+					}
+				}
+			}
+			&:hover {
+				span.hamburger-bar {
+					&--first, &--second {
+						transform: translate(0px, 0);
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	&.basic-footer {
+		padding: 0px 15px;
+	}
+
+	&.chapter-footer {
+		position: sticky;
+		left: 0px;
+		bottom: 0px;
+		z-index: -999;
+		width: 100%;
+		.chapter-footer__content {
+			padding: 80px 0px;
+		}
+	}
+}
+
+.chapter-link {
+	hr {
+		width: 100%;
+		border-color: white;
+		border-width: 1px;
+		opacity: 0.5;
+		transition: all .3s ease;
+	}
+	&__title {
+		position: relative;
+		&::after {
+			content: url("../media/icons/arrow-white.svg");
+			display: block;
+    		position: absolute;
+    		top: 0px;
+    		right: 16px;
+    		transition: all .3s ease;
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		hr {
+			opacity: 1;
+		}
+		p.chapter-link__title {
+			&::after {
+				right: 8px;
+			}
+		}
+	}
+}
+
+.block-module {
+	width: 100%;
+	padding: 54px 0px;
+	margin: 0;
+	
+	@media @md {
+		margin: 0px 15px;
+		padding: 54px 80px;
+	}
+
+	.flex-container {
+		display: block;
+
+		@media @xl {
+    		display: flex;
+  		}
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+}
+
+.block-social {
+	display: block;
+	background-color: darken(@white, 94%);
+	padding: 40px 40px;
+	width: 100%;
+	transition: all .3s ease;
+
+	&:hover {
+		background-color: darken(@white, 96%)
+	}
+}
