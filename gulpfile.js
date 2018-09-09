@@ -52,7 +52,7 @@ gulp.task('minify-img', function() {
 
 /* compiling twig files from the src directory into html files in the dist directory */
 gulp.task('views', function() {
-  return gulp.src(SRC + '/templates/**/*.twig')
+  return gulp.src(SRC + '/views/**/*.twig')
   // modify project structure to build only pages.
   .pipe(data(function(file) {
     return require(SRC + '/data/data.json')
@@ -65,6 +65,7 @@ gulp.task('views', function() {
 gulp.task('watch', function(){
   gulp.watch(SRC + '/styles/includes/*.less', ['less']);
   gulp.watch(SRC + '/templates/**/*.twig', ['views']);
+  gulp.watch(SRC + '/views/**/*.twig', ['views']);
   gulp.watch(SRC + '/data/data.json', ['views']);
   // add a task to watch new images in the media folder
 
