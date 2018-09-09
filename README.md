@@ -8,4 +8,4 @@ This is also where I publish articles related to web development and other stuff
 [e/learn - Kickstart your Digital Marketing skills](https://elechaudel.github.io/learn/app/dist/)
 
 ## Thoughts
-There is no articles at the moment.
+I haven't published any thougts yet.
