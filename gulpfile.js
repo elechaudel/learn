@@ -36,12 +36,17 @@ gulp.task('less', function() {
   .pipe(gulp.dest(DIST + '/styles'));
 });
 
+gulp.task('js', function() {
+  return gulp.src(SRC + '/js/**/*.js')
+  .pipe(gulp.dest(DIST + '/js'));
+});
+
 gulp.task('autoprefix', function(){
-  return gulp.src(DIST + '/styles/includes/*.css')
+  return gulp.src(DIST + '/styles/main.css')
   .pipe(autoprefixer({
     browsers: ['last 2 versions']
   }))
-  .pipe(gulp.dest(DIST + '/styles/includes'));
+  .pipe(gulp.dest(DIST + '/styles'));
 });
 
 gulp.task('minify-img', function() {
@@ -63,13 +68,14 @@ gulp.task('views', function() {
 
 /* List of files to watch while I'm coding. So I can test my work with BrowserSync in the Dist folder. */
 gulp.task('watch', function(){
-  gulp.watch(SRC + '/styles/includes/*.less', ['less']);
+  gulp.watch(SRC + '/styles/**/*.less', ['less']);
   gulp.watch(SRC + '/templates/**/*.twig', ['views']);
   gulp.watch(SRC + '/views/**/*.twig', ['views']);
+  gulp.watch(SRC + '/js/**/*.js', ['js']);
   gulp.watch(SRC + '/data/data.json', ['views']);
   // add a task to watch new images in the media folder
 
 })
 
 /* Just call gulp in your terminal to run the default task. I use this command to build my project */
-gulp.task('default', ['views', 'less', 'autoprefix', 'minify-img', 'watch']);
+gulp.task('default', ['views', 'less', 'autoprefix', 'minify-img', 'js', 'watch']);

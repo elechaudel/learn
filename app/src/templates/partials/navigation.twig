@@ -1,9 +1,41 @@
-<nav class="menu vertical-spacing--80--bottom">
+<nav class="menu {{ navColor }} vertical-spacing--80--bottom">
 	<div class="flex-container space-between align-center">
 		<a href="/" class="navbar-logo"><img src="media/logos/brand-logo-{{ navColor }}.svg" alt="e/learn brand logo"></a>
-		<div class="hamburger-icon">
+		<div class="hamburger-icon js-nav-menu">
 			<span class="hamburger-bar--first bg-color--{{ navColor }}"></span>
 			<span class="hamburger-bar--second bg-color--{{ navColor }}"></span>
 		</div>
 	</div>
 </nav>
+<div class="menu-overlay bg-color--black">
+	<div class="page-layout">
+		<div class="container-fluid">
+			<div class="menu-overlay__content">
+				<div class="row">
+					<div class="col-12 vertical-spacing--64">
+						<h3>Navigate between chapters</h3>
+					</div>
+				</div>
+				<div class="row">
+					{% for chapter in chapters %}
+						<div class="col-lg-6 chapter-link__item">
+							{% include 'chapter-link.twig' %}
+						</div>
+					{% endfor %}
+				</div>
+				<div class="row">
+					<div class="col-12 vertical-spacing--64">
+						<h3>About me</h3>
+					</div>
+				</div>
+				<div class="row">
+					{% for social in socials %}
+						<div class="col-xl-4 vertical-spacing--24--bottom">
+							{% include 'social-link.twig' %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
