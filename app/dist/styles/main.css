@@ -175,6 +175,7 @@ p.paragraph__big {
   line-height: 1.5;
 }
 p.meta {
+  font-family: 'Overpass Mono', monospace;
   font-size: calc(16px + (16 - 16) * (100vw - 320px) / (1200 - 320));
   line-height: 1;
 }
