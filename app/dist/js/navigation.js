@@ -3,8 +3,13 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 		$('.menu-overlay').toggleClass('open');
 		$('body').toggleClass('no-scroll');
-		window.setTimeout(function() {
-			$('nav.menu').toggleClass('active');
-		}, 1000);
+		
+		if ($('nav.menu').hasClass("active")) {
+			$('nav.menu').removeClass('active');
+		} else {
+			window.setTimeout(function() {
+				$('nav.menu').addClass('active');
+			}, 1000);
+		};
 	});
 });
