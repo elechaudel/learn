@@ -1,3 +1,4 @@
+/* navigation component */
 $(document).ready(function() {
 	$('.js-nav-menu').click(function() {
 		$(this).toggleClass('open');

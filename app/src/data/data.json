@@ -6,7 +6,7 @@
       "url": "/chapter-1",
       "moduleRef": "Module 01",
       "bgColor": "red",
-      "status": "active"
+      "status": "enabled"
     },
     {
       "id": "Chapter 02",
@@ -14,7 +14,7 @@
       "url": "",
       "moduleRef": "Module 01",
       "bgColor": "red",
-      "status": "inactive"
+      "status": "disabled"
     },
     {
       "id": "Chapter 03",
@@ -22,7 +22,7 @@
       "url": "",
       "moduleRef": "Module 02",
       "bgColor": "purple",
-      "status": "inactive"
+      "status": "disabled"
     },
     {
       "id": "Chapter 04",
@@ -30,7 +30,7 @@
       "url": "",
       "moduleRef": "Module 02",
       "bgColor": "purple",
-      "status": "inactive"
+      "status": "disabled"
     }
   ],
 

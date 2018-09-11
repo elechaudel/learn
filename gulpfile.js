@@ -20,7 +20,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var bs = require('browser-sync').create();
 var fs = require('fs');
-var print = require('gulp-print').default;
+var concat = require('gulp-concat');
 
 gulp.task('browser-sync', function() {
   bs.init({
@@ -36,8 +36,9 @@ gulp.task('less', function() {
   .pipe(gulp.dest(DIST + '/styles'));
 });
 
-gulp.task('js', function() {
+gulp.task('js-concat', function() {
   return gulp.src(SRC + '/js/**/*.js')
+  .pipe(concat('main.js'))
   .pipe(gulp.dest(DIST + '/js'));
 });
 
@@ -71,11 +72,11 @@ gulp.task('watch', function(){
   gulp.watch(SRC + '/styles/**/*.less', ['less']);
   gulp.watch(SRC + '/templates/**/*.twig', ['views']);
   gulp.watch(SRC + '/views/**/*.twig', ['views']);
-  gulp.watch(SRC + '/js/**/*.js', ['js']);
+  gulp.watch(SRC + '/js/**/*.js', ['js-concat']);
   gulp.watch(SRC + '/data/data.json', ['views']);
   // add a task to watch new images in the media folder
 
 })
 
 /* Just call gulp in your terminal to run the default task. I use this command to build my project */
-gulp.task('default', ['views', 'less', 'autoprefix', 'minify-img', 'js', 'watch']);
+gulp.task('default', ['views', 'less', 'autoprefix', 'minify-img', 'js-concat']);
