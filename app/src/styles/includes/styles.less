@@ -182,13 +182,29 @@ footer.chapter-footer {
     		transition: all .3s ease;
 		}
 	}
+
 	&:hover {
-		hr {
-			opacity: 1;
+
+		&.active {
+			hr {
+				opacity: 1;
+			}
+			p.chapter-link__title {
+				&::after {
+					right: 8px;
+				}
+			}
 		}
-		p.chapter-link__title {
-			&::after {
-				right: 8px;
+
+		&.inactive {
+			cursor: not-allowed;
+			hr {
+				opacity: 0.5;
+			}
+			p.chapter-link__title {
+				&::after {
+					right: 16px;
+				}
 			}
 		}
 	}

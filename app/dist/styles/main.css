@@ -483,11 +483,20 @@ footer.chapter-footer:hover .chapter-footer__title::after {
   right: 16px;
   transition: all 0.3s ease;
 }
-.chapter-link:hover hr {
+.chapter-link:hover.active hr {
   opacity: 1;
 }
-.chapter-link:hover p.chapter-link__title::after {
+.chapter-link:hover.active p.chapter-link__title::after {
   right: 8px;
+}
+.chapter-link:hover.inactive {
+  cursor: not-allowed;
+}
+.chapter-link:hover.inactive hr {
+  opacity: 0.5;
+}
+.chapter-link:hover.inactive p.chapter-link__title::after {
+  right: 16px;
 }
 .block-module {
   width: 100%;

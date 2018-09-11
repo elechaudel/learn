@@ -5,28 +5,32 @@
       "name": "What are you willing to work on?",
       "url": "/chapter-1",
       "moduleRef": "Module 01",
-      "bgColor": "red"
+      "bgColor": "red",
+      "status": "active"
     },
     {
       "id": "Chapter 02",
       "name": "Lorem ipsum dolor set amet?",
       "url": "",
       "moduleRef": "Module 01",
-      "bgColor": "red"
+      "bgColor": "red",
+      "status": "inactive"
     },
     {
       "id": "Chapter 03",
       "name": "Lorem ipsum dolor set amet?",
       "url": "",
       "moduleRef": "Module 02",
-      "bgColor": "purple"
+      "bgColor": "purple",
+      "status": "inactive"
     },
     {
       "id": "Chapter 04",
       "name": "Lorem ipsum dolor set amet?",
       "url": "",
       "moduleRef": "Module 02",
-      "bgColor": "purple"
+      "bgColor": "purple",
+      "status": "inactive"
     }
   ],
 
