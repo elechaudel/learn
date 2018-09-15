@@ -58,8 +58,7 @@ gulp.task('minify-img', function() {
 
 /* compiling twig files from the src directory into html files in the dist directory */
 gulp.task('views', function() {
-  return gulp.src(SRC + '/views/**/*.twig')
-  // modify project structure to build only pages.
+  return gulp.src(SRC + ['/views/**/*.twig'])
   .pipe(data(function(file) {
     return require(SRC + '/data/data.json')
   }))

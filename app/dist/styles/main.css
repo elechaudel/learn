@@ -151,6 +151,7 @@ html {
 h1,
 h2,
 h3,
+h4,
 p {
   color: #ffffff;
 }
@@ -164,6 +165,10 @@ h2 {
 }
 h3 {
   font-size: calc(28px + (36 - 28) * (100vw - 320px) / (1200 - 320));
+  line-height: 1.3;
+}
+h4 {
+  font-size: calc(20px + (28 - 20) * (100vw - 320px) / (1200 - 320));
   line-height: 1.3;
 }
 p {
@@ -181,6 +186,9 @@ p.meta {
 }
 .text-color--black {
   color: #000000;
+}
+.text-color--black70 {
+  color: rgba(0, 0, 0, 0.7);
 }
 .text-color--white {
   color: #ffffff;
@@ -211,6 +219,21 @@ p.meta {
 }
 .bg-color--green {
   background-color: #0BE9BB;
+}
+.bd-color--black {
+  border-color: #000000;
+}
+.bd-color--white {
+  border-color: #ffffff;
+}
+.bd-color--red {
+  border-color: #E9110B;
+}
+.bd-color--purple {
+  border-color: #6F0BE9;
+}
+.bd-color--green {
+  border-color: #0BE9BB;
 }
 /* Defining the default space value of the 8px grid */
 /* Mixin that defines the different variations of the vertical spacing */
@@ -296,6 +319,15 @@ p.meta {
 .vertical-spacing--80--bottom {
   margin-bottom: 80px;
 }
+.vertical-spacing--120 {
+  margin: 120px 0px;
+}
+.vertical-spacing--120--top {
+  margin-top: 120px;
+}
+.vertical-spacing--120--bottom {
+  margin-bottom: 120px;
+}
 .vertical-spacing--160 {
   margin: 160px 0px;
 }
@@ -364,6 +396,14 @@ nav.menu .hamburger-icon {
 nav.menu .hamburger-icon span {
   display: inline-block;
 }
+nav.menu .hamburger-icon span.hamburger-bar--first.white,
+nav.menu .hamburger-icon span.hamburger-bar--second.white {
+  background-color: #ffffff;
+}
+nav.menu .hamburger-icon span.hamburger-bar--first.black,
+nav.menu .hamburger-icon span.hamburger-bar--second.black {
+  background-color: #000000;
+}
 nav.menu .hamburger-icon span.hamburger-bar--first {
   position: absolute;
   top: 5px;
@@ -396,11 +436,25 @@ nav.menu .hamburger-icon.open span.hamburger-bar--first {
 nav.menu .hamburger-icon.open span.hamburger-bar--second {
   transform: translateY(-4px) translateX(0) rotate(-45deg);
 }
-nav.menu.active.white {
+nav.menu.black g#brand-logo {
+  fill: #000000;
+}
+nav.menu.black .hamburger-icon span.hamburger-bar--first,
+nav.menu.black .hamburger-icon span.hamburger-bar--second {
   background-color: #000000;
 }
-nav.menu.active.black {
+nav.menu.white g#brand-logo {
+  fill: #ffffff;
+}
+nav.menu.white .hamburger-icon span {
+  display: inline-block;
+}
+nav.menu.white .hamburger-icon span.hamburger-bar--first,
+nav.menu.white .hamburger-icon span.hamburger-bar--second {
   background-color: #ffffff;
+}
+nav.menu.active {
+  background-color: #000000;
 }
 .menu-overlay {
   visibility: hidden;
@@ -415,7 +469,7 @@ nav.menu.active.black {
   padding-top: 80px;
   transition: all 0.5s ease;
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .menu-overlay {
     padding-top: 160px;
   }
@@ -457,7 +511,7 @@ footer.chapter-footer a .chapter-footer__title::after {
   transition: all 0.3s ease;
   transform: scale(2);
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   footer.chapter-footer a .chapter-footer__title::after {
     visibility: visible;
   }
@@ -504,7 +558,7 @@ footer.chapter-footer:hover .chapter-footer__title::after {
   padding: 54px 0px;
   margin: 0;
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .block-module {
     margin: 0px 15px;
     padding: 54px 80px;
@@ -530,4 +584,24 @@ footer.chapter-footer:hover .chapter-footer__title::after {
 }
 .block-social:hover {
   background-color: #0a0a0a;
+}
+.chapter-page hr {
+  border-width: 2px;
+}
+.chapter-page .about-content {
+  margin-bottom: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .chapter-page .about-content {
+    margin-bottom: 64px;
+  }
+}
+.chapter-page .objectives-content {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+@media only screen and (min-width: 768px) {
+  .chapter-page .objectives-content {
+    margin-top: 0px;
+  }
 }

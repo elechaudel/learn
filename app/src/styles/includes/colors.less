@@ -1,4 +1,5 @@
 @black: #000000;
+@black70: rgba(0, 0, 0, 0.7);
 @white: #ffffff;
 @white70: rgba(255, 255, 255, 0.7);
 @red: #E9110B;
@@ -9,6 +10,9 @@
 .text-color {
 	&--black {
 		color: @black;
+	}
+	&--black70 {
+		color: @black70;
 	}
 	&--white {
 		color: @white;
@@ -42,5 +46,23 @@
 	}
 	&--green {
 		background-color: @green;
+	}
+}
+
+.bd-color {
+	&--black {
+		border-color: @black;
+	}
+	&--white {
+		border-color: @white;
+	}
+	&--red {
+		border-color: @red;
+	}
+	&--purple {
+		border-color: @purple;
+	}
+	&--green {
+		border-color: @green;
 	}
 }

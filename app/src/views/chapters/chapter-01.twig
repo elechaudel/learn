@@ -1,0 +1,43 @@
+{% extends "../../templates/layouts/base.twig" %}
+
+{% block title %}home{% endblock %}
+{% block metadescription %}
+	A place where you can find all the courses I'm developing for my students as well as articles I'm writing.
+{% endblock %}
+
+
+{% block content %}
+
+	<div class="page-background bg-color--white">
+
+		<div class="page-layout">
+			
+			<!-- Begin nav -->
+			{% include "../../templates/partials/navigation.twig" with { 'navColor': 'black' } %}
+			<!-- End nav -->
+			
+			<!-- Begin page content -->
+
+			<div class="main-content">
+				{% set projectID = 1 %}
+				{% include "../../templates/partials/chapter-page.twig" %}
+			</div>
+
+			<!-- End page content -->
+
+			<!-- Begin basic-footer -->
+			<!-- End basic-footer -->
+
+		</div>
+
+	</div>
+
+	<!-- Begin chapter-footer -->
+	{% for chapter in chapters %}
+		{% if loop.index == projectID + 1 %}
+			{% include "../../templates/partials/chapter-footer.twig" %}
+		{% endif %}
+	{% endfor %}
+	<!-- End chapter-footer -->
+	
+{% endblock %}

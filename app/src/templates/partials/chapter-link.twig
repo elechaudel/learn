@@ -1,4 +1,4 @@
-<a href="{{ chapter.url }}" class="chapter-link {{ chapter.status }}">
+<a href="{% for config in configs %}{{ config.root }}{% endfor %}{{ chapter.url }}" class="chapter-link {{ chapter.status }}">
 	<p class="meta  text-color--white70 vertical-spacing--8--bottom">{{ chapter.id }}</p>
 	<p class="chapter-link__title vertical-spacing--16--bottom">{{ chapter.name }}</p>
 	<hr class="vertical-spacing--32--bottom">

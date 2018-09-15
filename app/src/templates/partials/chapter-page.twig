@@ -1,0 +1,45 @@
+<div class="chapter-page">
+	<section id="chapter-header">
+		<div class="container-fluid">
+			<div class="row">
+				{% for chapter in chapters %}
+					{% if loop.index == projectID %}
+						<div class="col-12">
+							<p class="meta  text-color--black70 vertical-spacing--8--bottom">{{ chapter.id }}</p>
+							<h1 class="chapter-link__title text-color--black">{{ chapter.name }}</h1>
+							<hr class="bd-color--black vertical-spacing--80--bottom vertical-spacing--80--top">
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<section id="chapter-content vertical-spacing--80--bottom">
+		<div class="container-fluid">
+			<div class="row">
+				{% for chapter in chapters %}
+					{% if loop.index == projectID %}
+						<div class="col-md-6">
+							<div class="about-content">
+								<h3 class="text-color--black vertical-spacing--24--bottom">About</h3>
+								<p class="text-color--black">{{ chapter.description }}</p>
+							</div>
+						</div>
+						<div class="offset-md-1 col-md-5">
+							<div class="objectives-content">
+								<h3 class="text-color--black vertical-spacing--24--bottom">Objectives</h3>
+								{% for objective in chapter.objectives %}
+									<div class="objectives-content__item vertical-spacing--16--bottom">
+										<p class="bold text-color--black">{{ objective.id }}</p>
+										<p class="text-color--black">{{ objective.description }}</p>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+</div>

@@ -17,6 +17,7 @@ nav {
 	position: sticky;
 	top: 0px;
 	z-index: 999;
+
 	a {
 		text-decoration: none;
 		color: @white;
@@ -33,6 +34,17 @@ nav {
 			span {
 				display: inline-block;
 				&.hamburger-bar {
+					
+					&--first, &--second {
+						&.white {
+						background-color: @white;
+					}
+
+					&.black {
+						background-color: @black;
+						}
+					}
+
 					&--first {
 						position: absolute;
 						top: 5px;
@@ -76,13 +88,40 @@ nav {
 			}
 		}
 
+		&.black {
+			g#brand-logo {
+				fill: @black;
+			}
+
+			.hamburger-icon span {
+				&.hamburger-bar {
+					
+					&--first, &--second {
+						background-color: @black;
+					}
+				}
+			}
+		}
+
+		// Leave .white below .black so .white can override .black when animating the nav 
+		&.white {
+			g#brand-logo {
+				fill: @white;
+			}
+
+			.hamburger-icon span {
+				display: inline-block;
+				&.hamburger-bar {
+					
+					&--first, &--second {
+						background-color: @white;
+					}
+				}
+			}	
+		}
+
 		&.active {
-			&.white {
-				background-color: @black;
-			}
-			&.black {
-				background-color: @white;
-			}
+			background-color: @black;
 		}
 	}
 }
@@ -128,6 +167,7 @@ footer.chapter-footer {
 	bottom: 0px;
 	z-index: 1;
 	width: 100%;
+	//margin-top: 80px;
 	
 	a {	
 		.chapter-footer__content {
@@ -244,4 +284,30 @@ footer.chapter-footer {
 	&:hover {
 		background-color: darken(@white, 96%)
 	}
+}
+
+.chapter-page {
+
+	hr {
+		border-width: 2px;
+	}
+
+	.about-content {
+		margin-bottom: 0px;
+
+		@media @md {
+			margin-bottom: 64px;
+		}
+	}
+
+	.objectives-content {
+	margin-top: 64px;
+	margin-bottom: 64px;
+	//padding-left: 0px;
+
+	@media @md {
+		margin-top: 0px;
+		//padding-left:60px;
+	}
+}
 }

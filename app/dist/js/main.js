@@ -16,5 +16,15 @@ $(document).ready(function() {
 				$('nav.menu').addClass('active');
 			}, 1000);
 		};
+
+		if ($('.page-background').hasClass("bg-color--white")) {
+			$('nav.menu').toggleClass('white');
+		}
 	});
+
+	if ($('nav.menu').hasClass("white")) {
+		$('body').css("background-color", "black")
+	} else {
+		$('body').css("background-color", "white")
+	};
 });
