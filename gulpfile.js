@@ -79,3 +79,6 @@ gulp.task('watch', function(){
 
 /* Just call gulp in your terminal to run the default task. I use this command to build my project */
 gulp.task('default', ['views', 'less', 'autoprefix', 'minify-img', 'js-concat']);
+
+/* For TEST build change config.root in data.json to "/" */
+/* For PROD build change config.root in data.json to "/learn/app/dist/" */
