@@ -18,6 +18,20 @@
           "description": "Have a clear vision on how to develop a digital presence for a company, a brand or a product."
         }
       ],
+      "metas": [
+        {
+          "name": "Progress",
+          "description": "1/12"
+        },
+        {
+          "name": "Duration",
+          "description": "6 hours"
+        },
+        {
+          "name": "Resources",
+          "description": "<a href=\"https://www.google.com\"> Google Drive folder</a>"
+        }
+      ],
       "url": "chapters/chapter-01.html",
       "moduleRef": "Module 01",
       "bgColor": "red",
@@ -99,7 +113,7 @@
 
   "configs": [
     {
-      "root": "https://elechaudel.github.io/learn/app/dist/"
+      "root": "/"
     }
   ]
  } 

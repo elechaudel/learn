@@ -39,6 +39,21 @@
 					{% endif %}
 				{% endfor %}
 			</div>
+			<hr class="bd-color--black vertical-spacing--80--bottom vertical-spacing--80--top">
+			<div class="row meta-content">
+				{% for chapter in chapters %}
+					{% if loop.index == projectID %}
+						{% for meta in chapter.metas %}
+							<div class="col-sm-4">
+								<div class="meta-content__item">
+									<p class="text-color--black vertical-spacing--8--bottom">{{ meta.name }}</p>
+									<p class="meta text-color--black70">{{ meta.description }}</p>
+								</div>
+							</div>
+						{% endfor %}
+					{% endif %}
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </section>

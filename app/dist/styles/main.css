@@ -604,20 +604,21 @@ footer.chapter-footer:hover.disabled .chapter-footer__title::after {
 .chapter-page hr {
   border-width: 2px;
 }
-.chapter-page .about-content {
-  margin-bottom: 0px;
-}
-@media only screen and (min-width: 768px) {
-  .chapter-page .about-content {
-    margin-bottom: 80px;
-  }
-}
 .chapter-page .objectives-content {
   margin-top: 80px;
-  margin-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
   .chapter-page .objectives-content {
     margin-top: 0px;
   }
+}
+.chapter-page .meta-content > * {
+  margin-bottom: 24px;
+}
+.chapter-page .meta-content > *:last-child {
+  margin-bottom: 80px;
+}
+.chapter-page .meta-content > * a {
+  text-decoration: underline;
+  color: inherit;
 }
