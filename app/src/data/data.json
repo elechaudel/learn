@@ -2,20 +2,20 @@
   "chapters": [
     {
       "id": "Chapter 01",
-      "name": "What are you willing to work on?",
-      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+      "name": "Introduction to the course",
+      "description": "What is my goal? At the end of the year I want you to be more creative, organised and optimistic. Your fresh new marketing skills will give you a new point view about the digital world. How to achieve that? For that purpose I've built an atypical course to help you discover and practice digital marketing skills. In my opinion there is no such way to learn than by playing. That's why the course is focused around a personal and transversal project. Your Project. The first module is dedicated to finding and defining your Project. You will learn how to setup the basics knowledge and information you must have on a project in order to promote it online the right way. In the second and third modules we'll learn how to spread the word effectively on search engines and social media. What am I expecting from you? I want you to take very seriously the first module as it will significantly drive the success of the course. I give you the opportunity to work on a Project that matters to you. Your Project will be your souce of inspiration and motivation throughout this course.",
       "objectives": [
         {
           "id": "Objective 1",
-          "description": "I'm objective 1 description"
+          "description": "Being comfortable discovering and understanding client's needs and expectations."
         },
         {
           "id": "Objective 2",
-          "description": "I'm objective 2 description"
+          "description": "Being comfortable using digital marketing tools."
         },
         {
           "id": "Objective 3",
-          "description": "I'm objective 3 description"
+          "description": "Have a clear vision on how to develop a digital presence for a company, a brand or a product."
         }
       ],
       "url": "chapters/chapter-01.html",
@@ -25,12 +25,12 @@
     },
     {
       "id": "Chapter 02",
-      "name": "Lorem ipsum dolor set amet?",
+      "name": "What are you willing to work on?",
       "description": "I'm chapter 2 description",
-      "url": "",
+      "url": "chapters/chapter-02.html",
       "moduleRef": "Module 01",
       "bgColor": "red",
-      "status": "disabled"
+      "status": "enabled"
     },
     {
       "id": "Chapter 03",
@@ -99,7 +99,7 @@
 
   "configs": [
     {
-      "root": "/learn/app/dist/"
+      "root": "/"
     }
   ]
  } 

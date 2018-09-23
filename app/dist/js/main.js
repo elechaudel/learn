@@ -1,3 +1,7 @@
+/* chapter-footer component */
+$(document).ready(function() {
+	$('footer.chapter-footer.disabled a').removeAttr("href");
+});
 /* chapter-link component */
 $(document).ready(function() {
 	$('.chapter-link.disabled').removeAttr("href");

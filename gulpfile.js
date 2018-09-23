@@ -81,4 +81,4 @@ gulp.task('watch', function(){
 gulp.task('default', ['views', 'less', 'autoprefix', 'minify-img', 'js-concat']);
 
 /* For TEST build change config.root in data.json to "/" */
-/* For PROD build change config.root in data.json to "/learn/app/dist/" */
+/* For PROD build change config.root in data.json to "https://elechaudel.github.io/learn/app/dist/" */

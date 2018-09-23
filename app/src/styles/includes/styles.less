@@ -194,10 +194,32 @@ footer.chapter-footer {
 		}
 	}
 
+	&.disabled {
+		.chapter-footer__title {
+			&::after {
+				top: 24px;
+				font-size: 12px;
+				content: 'soon';
+			}
+		}
+	}
+
 	&:hover {
 		.chapter-footer__title {
 			&::after {
 				right: 0px;
+			}
+		}
+
+		&.disabled {
+			a {
+				cursor: not-allowed; 
+			}
+
+			.chapter-footer__title {
+				&::after {
+					right: 16px;
+				}
 			}
 		}
 	}
@@ -220,6 +242,16 @@ footer.chapter-footer {
     		top: 0px;
     		right: 16px;
     		transition: all .3s ease;
+		}
+	}
+
+	&.disabled {
+		p.chapter-link__title {
+			&::after {
+				top: 4px;
+				font-size: 16px;
+				content: 'soon';
+			}
 		}
 	}
 
@@ -296,13 +328,13 @@ footer.chapter-footer {
 		margin-bottom: 0px;
 
 		@media @md {
-			margin-bottom: 64px;
+			margin-bottom: 80px;
 		}
 	}
 
 	.objectives-content {
-	margin-top: 64px;
-	margin-bottom: 64px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 	//padding-left: 0px;
 
 	@media @md {
