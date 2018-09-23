@@ -113,7 +113,7 @@
 
   "configs": [
     {
-      "root": "/"
+      "root": "https://elechaudel.github.io/learn/app/dist/"
     }
   ]
  } 
