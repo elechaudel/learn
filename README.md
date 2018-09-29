@@ -2,10 +2,13 @@
 A place where you can find all the courses I'm developing for my students.
 My courses cover two thematics that are related to Search Engine Marketing and Social Media Marketing.
 
+
 ***
+
 
 # 1. Kickstart your Digital Marketing skills
 [e/learn - Kickstart your Digital Marketing skills](https://elechaudel.github.io/learn/app/dist/)
+
 
 ## Modules
 
@@ -18,7 +21,7 @@ The objective of module 02 is to learn how to be organically visible on search e
 ### Module 03
 The objective of module 03 is to learn how to animate your product or service on social networks. Being present on social networks is now essential for companies if they want to create connections online. From Content Marketing Strategies to Ad Copywriting you'll learn how to make your project shine on social networks.
 
-***
+
 
 ## Chapters
 
@@ -50,6 +53,7 @@ Being comfortable using digital marketing tools.
 Have a clear vision on how to develop a digital presence for a company, a brand or a product.
 
 
+
 ### Chapter 02 - What are you willing to work on?
 
 #### About
@@ -67,6 +71,8 @@ Understand the marketing stakes of a project.
 ##### Objective 3
 Clearly define what your Product/Service is and who you do that for.
 
+
 ***
 
-The rest of the chapters will be coming very soon.
+
+_The rest of the chapters will be coming very soon._
