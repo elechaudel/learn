@@ -49,7 +49,7 @@
         },
         {
           "id": "Objective 2",
-          "description": "Understand the marketing stakes of your project."
+          "description": "Understand the marketing stakes of a project."
         },
         {
           "id": "Objective 3",
@@ -238,7 +238,7 @@
 
   "configs": [
     {
-      "root": "https://elechaudel.github.io/learn/app/dist/"
+      "root": "/"
     }
   ]
  } 
