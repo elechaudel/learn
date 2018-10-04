@@ -572,6 +572,7 @@ footer.chapter-footer:hover.disabled .chapter-footer__title::after {
 }
 .chapter-link__title {
   position: relative;
+  padding-right: 54px;
 }
 .chapter-link__title::after {
   content: url("../media/icons/arrow-white.svg");
@@ -580,6 +581,9 @@ footer.chapter-footer:hover.disabled .chapter-footer__title::after {
   top: 0px;
   right: 16px;
   transition: all 0.3s ease;
+}
+.chapter-link.disabled p.chapter-link__title {
+  padding-right: 62px;
 }
 .chapter-link.disabled p.chapter-link__title::after {
   top: 4px;
