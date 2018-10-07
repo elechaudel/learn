@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 /* navigation component */
 $(document).ready(function() {
-	$('.js-nav-menu').click(function() {
+	$('.js-nav-menu').on('click touchstart', function() {
 		$(this).toggleClass('open');
 		$('.menu-overlay').toggleClass('open');
 		$('body').toggleClass('no-scroll');
