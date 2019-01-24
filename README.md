@@ -72,6 +72,42 @@ Understand the marketing stakes of a project.
 Clearly define what your Product/Service is and who you do that for.
 
 
+### Chapter 03 - Write & Structure your website
+
+#### About
+
+During this course you will learn how to structure your home page in order to capture the visitor’s interest. You will use the research that you’ve conducted through the Value Proposition Canvas to write the content as shown in the home page template. Your page’s job is to encourage visitors to read and scroll through the content and convince them to complete your ultimate conversion action (subscribe, buy, order, sign-up, ...). Very specific sections and copywriting elements will help you to reach this goal efficiently. The page template I give you is built to get the most conversions out of the total traffic you can generate on your page. However, most of the job consists in writing a content that resonates in the mind of your audience. Your preliminary research will help you choose the right words, the right statements and the right ton to express your business value.
+
+#### Objectives
+
+##### Objective 1
+Learn what are the components of conversion-centric web page.
+
+##### Objective 2
+Define and implement your copywriting plan.
+
+##### Objective 3
+Summarize your research findings into intelligible and meaningful copywriting.
+
+
+### Chapter 04 - What is Content Marketing?
+
+#### About
+
+Having the content to describe your service / product / offer is good but it’s not enough for you to thrive. Developing a content strategy is essential. Content marketing is a very recent practice on the web. Since a few years we can see more and more content created on the web and some of them are used to drive awareness, interest and value for many businesses. The process of developing a content strategy will help you design a content environment around your product or service to acquire and activate people to complete specific conversion actions. Your content must address the audience’s needs at different levels of awareness to capture as much opportunities as you can. In this course will see what is the logic behind a content strategy and how to apply it concretely in order to build an efficient content environment. Your mission will be to define the topics of interest related to the various levels of awareness of your audience, write the different pieces of content and then connect them together.
+
+#### Objectives
+
+##### Objective 1
+Understand what are the benefits of Content Marketing.
+
+##### Objective 2
+Be able to represent and build a content environment.
+
+##### Objective 3
+Practice quality writing and learn how to build a content network that generates conversions.
+
+
 ***
 
 
