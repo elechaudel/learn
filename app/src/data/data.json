@@ -21,7 +21,7 @@
       "metas": [
         {
           "name": "Progress",
-          "description": "1/7"
+          "description": "1/8"
         },
         {
           "name": "Duration",
@@ -59,7 +59,7 @@
       "metas": [
         {
           "name": "Progress",
-          "description": "2/7"
+          "description": "2/8"
         },
         {
           "name": "Duration",
@@ -77,34 +77,85 @@
     {
       "id": "Chapter 03",
       "name": "Write & Structure your website",
-      "description": "I'm chapter 3 description",
+      "description": "During this course you will learn how to structure your home page in order to capture the visitor’s interest. You will use the research that you’ve conducted through the Value Proposition Canvas to write the content as shown in the home page template. Your page’s job is to encourage visitors to read and scroll through the content and convince them to complete your ultimate conversion action (subscribe, buy, order, sign-up, ...). Very specific sections and copywriting elements will help you to reach this goal efficiently. The page template I give you is built to get the most conversions out of the total traffic you can generate on your page. However, most of the job consists in writing a content that resonates in the mind of your audience. Your preliminary research will help you choose the right words, the right statements and the right ton to express your business value.",
+      "url": "chapters/chapter-03.html",
+      "objectives": [
+        {
+          "id": "Objective 1",
+          "description": "Learn what are the components of conversion-centric web page."
+        },
+        {
+          "id": "Objective 2",
+          "description": "Define and implement your copywriting plan."
+        },
+        {
+          "id": "Objective 3",
+          "description": "Summarize your research findings into intelligible and meaningful copywriting."
+        }
+      ],
       "metas": [
         {
           "name": "Progress",
-          "description": "3/7"
+          "description": "3/8"
         },
         {
           "name": "Duration",
-          "description": "10 hours"
+          "description": "12 hours"
         },
         {
           "name": "Resources",
           "description": "<a target=\"_blank\" href=\"https://drive.google.com/drive/u/0/folders/18tsm_sUHLGcYyY5ED_PbUK9CvghDmpIn\"> Google Drive folder</a>"
         }
       ],
-      "url": "",
       "moduleRef": "Module 01",
       "bgColor": "red",
-      "status": "disabled"
+      "status": "enabled"
     },
     {
       "id": "Chapter 04",
+      "name": "What is Content Marketing?",
+      "description": "Having the content to describe your service / product / offer is good but it’s not enough for you to thrive. Developing a content strategy is essential. Content marketing is a very recent practice on the web. Since a few years we can see more and more content created on the web and some of them are used to drive awareness, interest and value for many businesses. The process of developing a content strategy will help you design a content environment around your product or service to acquire and activate people to complete specific conversion actions. Your content must address the audience’s needs at different levels of awareness to capture as much opportunities as you can. In this course will see what is the logic behind a content strategy and how to apply it concretely in order to build an efficient content environment. Your mission will be to define the topics of interest related to the various levels of awareness of your audience, write the different pieces of content and then connect them together.",
+      "url": "chapters/chapter-04.html",
+      "objectives": [
+        {
+          "id": "Objective 1",
+          "description": "Understand what are the benefits of Content Marketing."
+        },
+        {
+          "id": "Objective 2",
+          "description": "Be able to represent and build a content environment."
+        },
+        {
+          "id": "Objective 3",
+          "description": "Practice quality writing and learn how to build a content network that generates conversions."
+        }
+      ],
+      "metas": [
+        {
+          "name": "Progress",
+          "description": "4/8"
+        },
+        {
+          "name": "Duration",
+          "description": "6 hours"
+        },
+        {
+          "name": "Resources",
+          "description": "<a target=\"_blank\" href=\"https://drive.google.com/drive/u/0/folders/18tsm_sUHLGcYyY5ED_PbUK9CvghDmpIn\"> Google Drive folder</a>"
+        }
+      ],
+      "moduleRef": "Module 01",
+      "bgColor": "red",
+      "status": "enabled"
+    },
+    {
+      "id": "Chapter 05",
       "name": "Search Engine Optimisation",
       "description": "I'm chapter 4 description",
       "metas": [
         {
           "name": "Progress",
-          "description": "4/7"
+          "description": "5/8"
         },
         {
           "name": "Duration",
@@ -121,13 +172,13 @@
       "status": "disabled"
     },
     {
-      "id": "Chapter 05",
+      "id": "Chapter 06",
       "name": "Search Engine Advertising",
       "description": "I'm chapter 5 description",
       "metas": [
         {
           "name": "Progress",
-          "description": "5/7"
+          "description": "6/8"
         },
         {
           "name": "Duration",
@@ -144,13 +195,13 @@
       "status": "disabled"
     },
     {
-      "id": "Chapter 06",
+      "id": "Chapter 07",
       "name": "Social Medial Advertising",
       "description": "I'm chapter 6 description",
       "metas": [
         {
           "name": "Progress",
-          "description": "6/7"
+          "description": "7/8"
         },
         {
           "name": "Duration",
@@ -167,13 +218,13 @@
       "status": "disabled"
     },
     {
-      "id": "Chapter 07",
+      "id": "Chapter 08",
       "name": "Social Medial Optimisation",
       "description": "I'm chapter 7 description",
       "metas": [
         {
           "name": "Progress",
-          "description": "7/7"
+          "description": "8/8"
         },
         {
           "name": "Duration",
